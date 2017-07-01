@@ -3,9 +3,7 @@ gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 #barra de navegacion izquierda
 gsettings set com.canonical.Unity.Launcher launcher-position Left
 
-
 php artisan serve --host=192.168.0.119 --port=8125
-
 
 ###alarma###
 sleep 2m && mplayer /home/fernando/Vídeos/Kari\ Jobe\ Bethel\ Church\ Music-\ Forever\ Live\ \(lyrics\)-mv4LRl2KI2M.mp4 
