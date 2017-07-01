@@ -37,7 +37,7 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color|*-256color) color_prompt=yes;;
+    xterm-color|*-256color) color_prompt=yes;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -115,17 +115,21 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-
-
-# configuracion de color para el usuario normal (public)
-#export PS1='[33[0;32m]┌┼─┼─ [33[0m33[0;32m]u[33[0m] @ [33[0;36m]h[33[0m33[0;32m] ─┤├─ [33[0m]t d[33[0;32m] ─┤├─ [33[0;31m]w[33[0;32m] ─┤ n[33[0;32m]└┼─[33[0m33[0;32m]$[33[0m33[0;32m]─┤▶[33[0m]'
-
-#export PS1="\[\e[00;31m\]\u\[\e[0m\]\[\e[00;34m\]@\[\e[0m\]\[\e[00;32m\]\h\[\e[0m\]\[\e[00;33m\]:\[\e[0m\]\[\e[00;35m\][\[\e[0m\]\[\e[00;34m\]\w\[\e[0m\]\[\e[00;35m\]]\[\e[0m\]\[\e[01;32m\]:\[\e[0m\]\[\e[00;37m\] \[\e[0m\]"
-#codigo para el manejo del logo en la terminal (archivo .txt)
-#cat ~/.logo.txt
-
-export PS1="\[\033[38;5;208m\]┌─\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;197m\]<\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;226m\]El Universal\[$(tput sgr0)\]\[\033[38;5;197m\]/>\[\033[38;5;208m\](\[$(tput sgr0)\]\[\033[38;5;2m\]\w\[$(tput sgr0)\]\[\033[38;5;208m\])\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;1m\]\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;208m\]\n└──┤▶\[$(tput sgr0)\]"
-
-export PATH="${PATH}:/home/forevertucode/Documents/script"
 eval $(dircolors -b $HOME/.dircolors)
+#config promtec
+export PS1="\[\033[38;5;208m\]┌─\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;197m\]<\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;226m\]Developer\[$(tput sgr0)\]\[\033[38;5;197m\]/>\[\033[38;5;208m\](\[$(tput sgr0)\]\[\033[38;5;2m\]\w\[$(tput sgr0)\]\[\033[38;5;208m\])\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;1m\]\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;208m\]\n└──┤▶\[$(tput sgr0)\]"
+
+#ALIASES
+
+#ejecutar servidor laravel
+alias serv='/home/developer/Documentos/script/serv.sh'
+#creamos controlador tipo rest
+alias controller='/home/developer/Documentos/script/controller.sh'
+#creamos modelo y migracions
+alias models='/home/developer/Documentos/script/models.sh'
+#descargamos lista de videos youtube
+alias listdownload='/home/developer/Documentos/script/lyoutube.sh'
+#descargo musica de youtube
+alias mp3download='/home/developer/Documentos/script/myoutube.sh'
+#comandos
+alias commands='/home/developer/Documentos/script/treecom.sh'

@@ -1,9 +1,42 @@
+#                                    LS_COLORS
+# Maintainers: Magnus Woldrich <m@japh.se>,
+#              Ryan Delaney <ryan.delaney@gmail.com> OpenGPG: 0D98863B4E1D07B6
+#         URL: https://github.com/trapd00r/LS_COLORS
+#     Version: 0.254
+#     Updated: Tue Mar 29 21:25:30 AEST 2016
+#
+#   This is a collection of extension:color mappings, suitable to use as your
+#   LS_COLORS environment variable. Most of them use the extended color map,
+#   described in the ECMA-48 document; in other words, you'll need a terminal
+#   with capabilities of displaying 256 colors.
+#
+#   As of this writing, around 300 different filetypes/extensions is supported.
+#   That's indeed a lot of extensions, but there's a lot more! Therefore I need
+#   your help.
+#
+#   Fork this project on github, add the extensions you are missing, and send me
+#   a pull request.
+#
+#   For files that usually ends up next to each other, like html, css and js,
+#   try to pick colors that fit nicely together. Filetypes with multiple
+#   possible extensions, like htm and html, should have the same color.
+
+# This program is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the Perl Artistic License for more details.
+#
+# This program is free software: you can redistribute it and/or modify it under
+# the terms of the Perl Artistic License as published by the Perl Foundation,
+# either version 1.0 of the License, or (at your option) any later version.
+#
+# You should have received a copy of the Perl Artistic License along
+# with this program.  If not, see <http://www.perlfoundation.org/artistic_license_1_0>.
 
 # core {{{1
 BLK                   38;5;68
 CAPABILITY            38;5;17
 CHR                   38;5;113;1
-DIR                   38;5;197
+DIR                   38;5;76 #38;5;30
 DOOR                  38;5;127
 EXEC                  38;5;208;1
 FIFO                  38;5;126
@@ -40,7 +73,7 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 *CHANGES              38;5;220;1
 .log                  38;5;190
 # plain-text {{{2
-.txt                  38;5;81
+.txt                  38;5;49
 # markup {{{2
 .etx                  38;5;184
 .info                 38;5;184
@@ -212,12 +245,12 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .pyc                  38;5;240
 # }}}
 # html {{{2
-.css                  38;5;125;1
+.css                  38;5;68
 .less                 38;5;125;1
 .sass                 38;5;125;1
 .scss                 38;5;125;1
 .htm                  38;5;125;1
-.html                 38;5;125;1
+.html                 38;5;197
 .jhtm                 38;5;125;1
 .mht                  38;5;125;1
 .eml                  38;5;125;1
@@ -226,7 +259,7 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 # java {{{2
 .coffee               38;5;074;1
 .java                 38;5;074;1
-.js                   38;5;074;1
+.js                   38;5;18
 .jsm                  38;5;074;1
 .jsm                  38;5;074;1
 .jsp                  38;5;074;1
@@ -270,12 +303,12 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .TIFF                 38;5;97
 .cdr                  38;5;97
 .gif                  38;5;97
-.ico                  38;5;97
+.ico                  38;5;166
 .jpeg                 38;5;97
-.JPG                  38;5;97
-.jpg                  38;5;97
+.JPG                  38;5;196
+.jpg                  38;5;196
 .nth                  38;5;97
-.png                  38;5;97
+.png                  38;5;213
 .psd                  38;5;97
 .xpm                  38;5;97
 # }}}

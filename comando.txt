@@ -1,0 +1,28 @@
+# barra de navegacion abajo
+gsettings set com.canonical.Unity.Launcher launcher-position Bottom
+#barra de navegacion izquierda
+gsettings set com.canonical.Unity.Launcher launcher-position Left
+
+
+php artisan serve --host=192.168.0.119 --port=8125
+
+
+###alarma###
+sleep 2m && mplayer /home/fernando/Vídeos/Kari\ Jobe\ Bethel\ Church\ Music-\ Forever\ Live\ \(lyrics\)-mv4LRl2KI2M.mp4 
+
+###terminar procesos###
+ps aux
+kill " el numero PID"
+
+### configuracion de MOCP ###
+mkdir ~/.moc 
+cp /usr/share/doc/moc/examples/config.example.gz ~/.moc/ 
+cd ~/.moc/ 
+gzip -d config.example.gz 
+mv config.example config 
+
+ sudo vim ~/.moc/config 
+
+# Theme = exaple_theme 
+
+# XTermTheme    = transparent-background 
